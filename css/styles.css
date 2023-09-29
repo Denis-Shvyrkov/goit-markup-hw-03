@@ -4,13 +4,47 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1160px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /*-------------------Header------------------- */
@@ -45,9 +79,9 @@ a {
   color: #404bbf;
 }
 
-.header-address {
-  font-style: normal;
-}
+/* .header-address {
+
+} */
 
 .header-address-link {
   color: #434455;
