@@ -34,6 +34,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -41,15 +43,35 @@ address {
 }
 
 .container {
-  width: 1160px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*-------------------Header------------------- */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
 .header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 452px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -64,14 +86,25 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-right: 76px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-logo span {
   color: #2e2f42;
 }
 
+.header-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 261px;
+}
+
 .header-navigation-link {
   color: #2e2f42;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-navigation-link:hover,
@@ -79,15 +112,20 @@ address {
   color: #404bbf;
 }
 
-/* .header-address {
-
-} */
+.header-address-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 344px;
+}
 
 .header-address-link {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-address-link:hover,
@@ -95,10 +133,25 @@ address {
   color: #404bbf;
 }
 
+/*-------------------Main------------------- */
+
 /*-------------------Hero------------------- */
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 600px;
   background: #2e2f42;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
@@ -107,6 +160,7 @@ address {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-bottom: 48px;
 }
 
 .hero-button {
@@ -118,6 +172,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border-color: transparent;
 }
 
 .hero-button:hover,
@@ -127,12 +184,22 @@ address {
 
 /*-------------------Features------------------- */
 
+.features-item {
+width: 264px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .features-subtitle {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -142,7 +209,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-/*-------------------Features------------------- */
+/*-------------------Team------------------- */
 .team {
   background: #f4f4fd;
 }
@@ -159,6 +226,8 @@ address {
 .team-item {
   background: #fff;
 }
+/* .team-item-description {
+} */
 
 .team-item-subtitle {
   color: #2e2f42;
@@ -179,6 +248,15 @@ address {
 
 /*-------------------Portfolio------------------- */
 
+/* .portfolio {
+} */
+
+.potrfolio-item {
+  border: 1px solid #e7e9fc;
+  background: #fff;
+}
+/* .Portfolio-item-description {
+} */
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
