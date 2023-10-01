@@ -86,8 +86,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 24px 0;
 }
 
 .header-logo span {
